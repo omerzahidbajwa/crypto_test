@@ -1,6 +1,7 @@
 import "styled-components";
 
 interface Color {
+  lightGray: string;
   primary: string;
   primaryDark: string;
   white: string;

@@ -1,14 +1,17 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import "./App.css";
+import styled, { ThemeProvider } from "styled-components";
 import theme from "./styles/theme";
+
+const Wrapper = styled.div`
+  text-align: center;
+`
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+      <Wrapper>
         <p>Start coding here...</p>
-      </div>
+      </Wrapper>
     </ThemeProvider>
   );
 }
